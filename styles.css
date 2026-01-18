@@ -261,17 +261,14 @@ body {
 }
 
 /* Skills Section */
-.skills-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
+skills-grid {
+    grid-template-columns: 1fr;
+  }
 
 .skill-category {
-  color: var(--primary-color);
-  line-height: 1.2;
-  font-size: 0.85rem;
-}
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
 
 .skill-category strong {
   color: var(--primary-color);
@@ -321,7 +318,7 @@ body {
 /* Interactive Elements */
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .container {
     width: 100%;
     height: auto;
@@ -445,7 +442,12 @@ html {
     margin: 0;
     padding: 0;
   }
-  
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+  }
+
   .theme-switch,
   .print-pdf-container,
   .page-navigation {
